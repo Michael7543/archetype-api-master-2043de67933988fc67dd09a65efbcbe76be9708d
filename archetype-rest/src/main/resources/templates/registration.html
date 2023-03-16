@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Notificación</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 30%;
+            padding: 10px;
+        }
+
+        .column1 {
+            float: left;
+            width: 70%;
+            padding: 10px;
+        }
+
+        .head {
+            border-style: solid;
+            border-color: coral;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<table
+        style="background-color: #ffffff; filter: alpha(opacity = 40); opacity: 0.95; border: 1px red solid; width: 100%">
+    <tbody>
+    <tr>
+        <td width="100%">
+            <div align="center">
+                <img src="images/header.png" data-th-src="|cid:header|" width="100%"/>
+            </div>
+            <div align="left" style="width: 80%">
+                <h4 style="color: #0066CC;width: 80%">REGISTRO POSTULACIÓN ESCUELA POLITÉCNICA NACIONAL</h4>
+                <p style="width: 80%">
+                    Postulante: <b th:text="${postulante}">postulante</b> <br></br>
+                    <br></br>
+                    Usuario: <b th:text="${usuario}">usuario</b> <br></br>
+                    <br></br>
+                    Clave: <b th:text="${clave}">clave</b><br></br>
+                    <br></br>
+                    Estado: <b th:text="${estado}">estado</b><br></br>
+                    <br></br>
+                    Se ha registrado como postulante a la fecha <b
+                        th:text="${hora}">hora</b> del <b th:text="${fecha}">fecha</b> <br></br>
+                    <br></br>
+
+                </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" width='"100%'>
+            <p>ESTE CORREO ES SOLAMENTE INFORMATIVO, NO ES NECESARIO RESPONDERLO.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" width='"100%'>
+            <p>Powered by @EPN. Todos los derechos reservados -
+                2022</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" width='"100%'><img src="images/footer.png"
+                                           data-th-src="|cid:footer|" height="100%" width="100%"/></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
