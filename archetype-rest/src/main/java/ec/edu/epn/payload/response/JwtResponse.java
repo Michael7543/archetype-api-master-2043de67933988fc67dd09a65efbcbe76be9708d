@@ -1,4 +1,4 @@
-package ec.edu.epn.payload.response;
+/*package ec.edu.epn.payload.response;
 
 import java.util.List;
 
@@ -72,3 +72,4 @@ public class JwtResponse {
     this.refreshToken = refreshToken;
   }
 }
+*/

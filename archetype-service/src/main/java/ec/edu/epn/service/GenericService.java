@@ -1,6 +1,5 @@
 package ec.edu.epn.service;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public interface GenericService<T, V> {

@@ -1,3 +1,4 @@
+/*
 package ec.edu.epn.payload.request;
 
 import javax.validation.constraints.NotBlank;
@@ -14,3 +15,4 @@ public class TokenRefreshRequest {
     this.refreshToken = refreshToken;
   }
 }
+*/

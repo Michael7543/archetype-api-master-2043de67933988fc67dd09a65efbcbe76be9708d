@@ -1,3 +1,4 @@
+/*
 package ec.edu.epn.payload.response;
 
 public class TokenRefreshResponse {
@@ -35,3 +36,4 @@ public class TokenRefreshResponse {
   }
 
 }
+*/

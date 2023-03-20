@@ -21,6 +21,7 @@ public class restApplication {
     public static void main(String[] args) {
         SpringApplication.run(restApplication.class, args);
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
         String password = "Chester_1";
         String encodedPassword = passwordEncoder.encode(password);
 
@@ -31,7 +32,7 @@ public class restApplication {
 
 
         boolean isPasswordMatch = passwordEncoder.matches(password, encodedPassword);
-        System.out.println("Password : " + password + "   isPasswordMatch    : " + isPasswordMatch);
+        System.out.println("Password : " + password + "  isPasswordMatch    : " + isPasswordMatch);
 
 
         System.out.println("CCLAVE GENERADA: " + Utils.generateRandomPassword());
